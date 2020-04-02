@@ -1,5 +1,5 @@
 # modified from https://github.com/inonit/docker-pgbouncer/blob/master/Dockerfile
-
+FROM            buildpack-deps:jessie-curl
 RUN             groupadd -r pgbouncer
 RUN             useradd -rm -d /var/run/pgbouncer -s /usr/sbin/nologin -g pgbouncer pgbouncer
 
